@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Active Link</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar a {
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .navbar a.active {
+            color: red; /* Warna aktif */
+            font-weight: bold;
+        }
+        section {
+            height: 100vh; /* Setiap section memiliki tinggi penuh layar */
+            padding: 20px;
+        }
+        #home { background: lightblue; }
+        #about { background: lightgreen; }
+        #services { background: lightcoral; }
+        #gallery { background: lightgoldenrodyellow; }
+        #contact { background: lightpink; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
+</header>
+
+<section id="home">Home Content</section>
+<section id="about">About Content</section>
+<section id="services">Services Content</section>
+<section id="gallery">Gallery Content</section>
+<section id="contact">Contact Content</section>
+
+<script>
+    // Kode JavaScript untuk menandai tautan aktif
+    document.addEventListener("DOMContentLoaded", function() {
+        let sections = document.querySelectorAll('section');
+        let navLinks = document.querySelectorAll('header .navbar a');
+
+        window.onscroll = () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150; // Offset untuk menyesuaikan posisi
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if (top >= offset && top < offset + height) {
+                    navLinks.forEach(links => {
+                        links.classList.remove('active');
+                        if (links.getAttribute('href') === '#' + id) {
+                            links.classList.add('active');
+                        }
+                    });
+                }
+            });
+        };
+    });
+</script>
+
+</body>
+</html>

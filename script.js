@@ -1,3 +1,4 @@
+
 // menu toogle
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -47,7 +48,12 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
-// type text
-const typed = new typed('.multiple-text', {
-    strings: ['Student Informatics Engineering','Junior Design','Web Developer', ]
-});
+
+const options = {
+            strings: ["Web Developer", "Graphic Designer", "Digital Marketer"], // Teks yang akan ditampilkan
+            typeSpeed: 100, // Kecepatan mengetik
+            backSpeed: 50, // Kecepatan menghapus
+            backDelay: 1000, // Delay sebelum menghapus
+            loop: true // Mengulangi efek
+        };
+ const typed = new Typed(".typed-text", options); 
