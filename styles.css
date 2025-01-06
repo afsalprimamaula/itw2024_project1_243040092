@@ -11,7 +11,7 @@
     font-family: 'Outfit', sans-serif;
 }
 
-/* simple kode */
+/* kode simple */
 :root {
     --bg-color: #323946;
     --second-bg-color: #000B58;
@@ -128,6 +128,7 @@ section {
         transform: translateY(0);
     }
 }
+
 
 .home-content h3 {
     font-size: 3.2rem;
