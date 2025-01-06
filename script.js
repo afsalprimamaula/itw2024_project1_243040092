@@ -48,12 +48,4 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
-
-const options = {
-            strings: ["Web Developer", "Graphic Designer", "Digital Marketer"], // Teks yang akan ditampilkan
-            typeSpeed: 100, // Kecepatan mengetik
-            backSpeed: 50, // Kecepatan menghapus
-            backDelay: 1000, // Delay sebelum menghapus
-            loop: true // Mengulangi efek
-        };
- const typed = new Typed(".typed-text", options); 
+ 

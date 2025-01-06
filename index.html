@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Afsal Prima Maula</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- font -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- icon box -->
 </head>
 <body>
-    <!-- header design -->
+
      <header class="header">
-        <a href="" class="logo">Portofolio</a>
+        <a href="" class="logo">DESGN APM</a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
@@ -30,7 +29,7 @@
         </div>
      </header>
 
-     <!-- home design -->
+     <!-- home -->
       <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, I'm </h3>
@@ -51,7 +50,7 @@
         </div>
       </section>
 
-      <!-- about design  -->
+      <!-- about -->
        <section class="about" id="about">
         <div class="about-iimg">
             <img src="img/about-me.jpg" alt="">
@@ -65,7 +64,7 @@
                 Pengalaman saya dalam digital marketing telah memberikan pemahaman yang baik tentang bagaimana sebuah produk atau layanan dapat dipasarkan secara efektif di dunia digital. Kemampuan ini sangat berguna dalam mengoptimalkan website yang saya buat.
                 
                 Ke depannya, saya ingin berkontribusi lebih besar lagi di bidang developer web expert. Saya bercita-cita untuk menciptakan website-website yang tidak hanya menarik secara visual, tetapi juga memiliki performa yang tinggi dan user-friendly. Selain itu, saya juga memiliki ambisi untuk menjadi owner perusahaan yang bergerak di bidang teknologi, sehingga dapat menciptakan inovasi-inovasi baru yang bermanfaat bagi masyarakat.".</p>
-            <a href="#" class="btn">Read More </a>
+                <a href="cv afsal.pdf" class="btn">Download CV</a>
         </div>
        </section>
 
@@ -100,11 +99,11 @@
 
             <div class="gallery-container">
                 <div class="gallery-box">
-                    <img src="img/background right 1.jpeg" alt="">
+                    <img src="img/project2.png" alt="">
                     <div class="gallery-layer">
                         <h4>Web Developer</h4>
                         <p>Mendesain identitas visual yang kuat dan konsisten untuk [Nama Perusahaan], mulai dari logo hingga materi promosi lainnya.</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                        <a href="http://127.0.0.1:3000/index3.html"><i class='bx bx-link-external' ></i></a>
                     </div>
                 </div>
 
@@ -113,7 +112,6 @@
                     <div class="gallery-layer">
                         <h4>Desain Grafis</h4>
                         <p>Mendesain poster menggunakan canva</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
                     </div>
                 </div>
 
@@ -122,7 +120,6 @@
                     <div class="gallery-layer">
                         <h4>Digital Markeing</h4>
                         <p>Mengedit video menggunakan Capcut</p>
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
                     </div>
                 </div>
 
@@ -130,27 +127,22 @@
         </section>
 
         <!-- contact -->
-         <section class="contact" id="contact">
-                <h2 class="heading">Contact <span>Me!</span></h2>
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+        
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">   <!-- web3forms -->
+                <input type="hidden" name="access_key" value="1988088a-bd7a-478a-9610-83469f8abc14">
+                <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+                <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+        </section>
 
-                <form action="https://formspree.io/f/mpwwqawq" method="post">
-                    <div class="input-box">
-                        <input type="text" placeholder="Full Name">
-                        <input type="email" placeholder="Email Address">
-                    </div>
-                    <div class="input-box">
-                        <input type="number" placeholder="Mobile Number">
-                        <input type="text" placeholder="Email Subbject">
-                    </div>
-                    <textarea name="" id="" placeholder="Your Messaage"></textarea>
-                    <input type="submit" value="Send Messaage" class="btn">
-                </form>
-         </section>
-
-         <!-- footer design -->
+         <!-- footer -->
           <footer class="footer">
             <div class="footer-text">
-                <p>Copyright &copy; 2024 by Afsal Prima</p>
+                <p>Buatan &copy; 2024 by Afsal Prima</p>
             </div>
 
             <div class="footer-iconTop">
@@ -159,69 +151,72 @@
           </footer>
 
 
+        <!-- Javascript -->
           <script>
             const options = {
                 strings: ["Web Developer Junior", "Good Boy", "Digital Marketer"], // Teks yang akan ditampilkan
-                typeSpeed: 150, // Kecepatan mengetik
-                backSpeed: 80, // Kecepatan menghapus
-                backDelay: 2000, // Delay sebelum menghapus
-                loop: true // Mengulangi efek
+                typeSpeed: 150, 
+                backSpeed: 80, 
+                backDelay: 2000, 
+                loop: true 
             };
     
             const typed = new Typed(".typed-text", options); 
         </script>
           
         <!-- scroll reveal -->
-         <script>
-        //  menu toogle
-         
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+     <script>
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-};
+        //  navbar responsive
+        let menuIcon = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
 
-// scroll sections
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header navbar a[href*=' + id + ']').classList.add('active');
-            });
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
         };
-    });
+
+        // menandai link aktif
+        let sections = document.querySelectorAll('section');
+        let navLinks = document.querySelectorAll('header nav a');
+
+        window.onscroll = () => {
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+
+                if(top >= offset && top < offset + height) {
+                    navLinks.forEach(links => {
+                        links.classList.remove('active');
+                        document.querySelector('header navbar a[href*=' + id + ']').classList.add('active');
+                    });
+                };
+            });
 
 
+            // menyembunyikan navbar saat di scroll
+            menuIcon.classList.remove('bx-x');
+            navbar.classList.remove('active');
+        };
 
-    menuIcon.classList.remove('bx-x');
-    navbar.classList.remove('active');
-};
+        // pengaturan scroll reveal
 
-// scroll start
+        ScrollReveal({
 
-ScrollReveal({
-    // reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-});
+            distance: '80px',
+            duration: 2000,
+            delay: 200
+        });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .gallery-box, .contact form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+        ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+        ScrollReveal().reveal('.home-img, .services-container, .gallery-box, .contact form', { origin: 'bottom' });
+        ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+        ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
     </script>
+
 
     <script src="script.js"></script>
 
